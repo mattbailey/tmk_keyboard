@@ -35,7 +35,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* 0: ANSI qwerty */
     KEYMAP(ESC,    1,    2,    3,    4,    5,    6,    7,    8,    9,    0, MINS,  EQL, GRV, BSPC, \
            TAB,    Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P, LBRC, RBRC, BSLS,       \
-          RTCL,    A,    S,    D,    F,    G,    H,    J,    K,    L, SCLN, QUOT, PGDN, ENT ,       \
+          RCTL,    A,    S,    D,    F,    G,    H,    J,    K,    L, SCLN, QUOT, PGDN, ENT ,       \
           LSFT, NO5,    Z,    X,    C,    V,    B,    N,    M, COMM,  DOT, SLSH,  NO, RSFT,   FN0, \
           LCTL, LGUI, LALT,                    SPC,                   LEFT, DOWN,  UP, RIGHT),
 
