@@ -36,14 +36,13 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            TAB,    Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P, LBRC, RBRC, BSLS,      \
           RCTL,    A,    S,    D,    F,    G,    H,    J,    K,    L, SCLN, QUOT, PGDN,  ENT,      \
           LSFT,   NO,    Z,    X,    C,    V,    B,    N,    M, COMM,  DOT, SLSH,   NO, RSFT, FN0, \
-          LCTL, LGUI, LALT,                    SPC,                   LEFT, DOWN,   UP, RIGHT),
+          LCTL, LALT, RGUI,                    SPC,                   LEFT, DOWN,   UP, RIGHT),
 
-    KEYMAP( ESC,   F1,   F2,   F3,   F4,   F5,   F6,   F7,   F8,   F9,  F10,  F11,  F12, MPLY, MNXT,\
+    KEYMAP( ESC,   F1,   F2,   F3,   F4,   F5,   F6,   F7,   F8,   F9,  F10,  F11,  F12, MSTP, MNXT,\
            TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, VOLD, VOLU, MUTE,      \
            TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,      \
-           TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,\
-           TRNS, TRNS, TRNS,                   TRNS,                    HOME, PGDN, PGUP,  END),
-
+            APP, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,\
+           RCTL, RALT, LGUI,                   TRNS,                    HOME, PGDN, PGUP,  END),
 
 };
 const uint16_t PROGMEM fn_actions[] = {
