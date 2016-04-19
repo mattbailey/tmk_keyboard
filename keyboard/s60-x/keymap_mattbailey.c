@@ -10,9 +10,9 @@
    ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
  2 │RCTL │  A  │  S  │  D  │  F  │  G  │  H  │  J  │  K  │  L  │  ;  │  '  │▒▒▒▒▒│ENTER│█████│
    ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
- 3 │LSHFT│▒▒▒▒▒│  Z  │  X  │  C  │  V  │  B  │  N  │  M  │  ,  │  .  │  /  │▒▒▒▒▒│RSHFT│ Fn0 │
+ 3 │LSHFT│▒▒▒▒▒│  Z  │  X  │  C  │  V  │  B  │  N  │  M  │  ,  │  .  │  /  │▒▒▒▒▒│UP   │ Fn0 │
    ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
- 4 │LCTRL│L_ALT│L_GUI│█████│█████│█████│ SPC │█████│█████│█████│LEFT │DOWN │ UP  │RIGHT│█████│
+ 4 │LCTRL│L_ALT│L_GUI│█████│█████│█████│ SPC │█████│█████│█████│Fn0  │LEFT │DOWN │RIGHT│█████│
    └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
 */
 
@@ -20,13 +20,13 @@
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
 │ Esc │ F1  │ F2  │ F3  │ F4  │ F5  │ F6  │ F7  │ F8  │ F9  │ F10 │ F11 │ F12 │MPLY │MNXT │
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-│     │     │     │     │     │     │     │     │     │     │     │VOLD │VOLU │MUTE │█████│
+│     │     │  UP │     │     │     │     │     │     │     │     │VOLD │VOLU │MUTE │█████│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-│     │     │     │     │     │     │     │     │     │     │     │     │▒▒▒▒▒│     │█████│
+│     │LEFT │DOWN │RIGHT│     │     │     │     │     │     │     │     │▒▒▒▒▒│     │█████│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
 │     │▒▒▒▒▒│     │     │     │     │     │     │     │     │     │     │▒▒▒▒▒│     │▒▒▒▒▒│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-│     │     │     │█████│█████│█████│     │█████│█████│█████│HOME │PGDN │PGUP │ END │█████│
+│RCTL │RALT │RGUI │█████│█████│█████│     │█████│█████│█████│HOME │PGDN │PGUP │ END │█████│
 └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
 
 */
@@ -35,14 +35,14 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KEYMAP(ESC,    1,    2,    3,    4,    5,    6,    7,    8,    9,    0, MINS,  EQL, GRV, BSPC, \
            TAB,    Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P, LBRC, RBRC, BSLS,      \
           RCTL,    A,    S,    D,    F,    G,    H,    J,    K,    L, SCLN, QUOT, PGDN,  ENT,      \
-          LSFT,   NO,    Z,    X,    C,    V,    B,    N,    M, COMM,  DOT, SLSH,   NO, RSFT, FN0, \
-          LCTL, LALT, RGUI,                    SPC,                   LEFT, DOWN,   UP, RIGHT),
+          LSFT,   NO,    Z,    X,    C,    V,    B,    N,    M, COMM,  DOT, SLSH,   NO, UP, FN0, \
+          LCTL, LALT, LGUI,                    SPC,                   FN0, LEFT, DOWN, RIGHT),
 
     KEYMAP( ESC,   F1,   F2,   F3,   F4,   F5,   F6,   F7,   F8,   F9,  F10,  F11,  F12, MSTP, MNXT,\
-           TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, VOLD, VOLU, MUTE,      \
-           TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,      \
+           TRNS,  UP, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, VOLD, VOLU, MUTE,      \
+           LEFT, DOWN, RIGHT, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,      \
             APP, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,\
-           RCTL, RALT, LGUI,                   TRNS,                    HOME, PGDN, PGUP,  END),
+           RCTL, RALT, RGUI,                   TRNS,                    HOME, PGDN, PGUP,  END),
 
 };
 const uint16_t PROGMEM fn_actions[] = {
